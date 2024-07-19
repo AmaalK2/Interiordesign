@@ -175,3 +175,27 @@ button {
 
 /*text_section*/
 
+.text_section {  /*va me servir a centrer le texte et quelques retouche*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+
+.text_section p  /*interrior*/  {
+    position: absolute;
+    font-size: 250px;
+    font-family: 'Anton', sans-serif;
+    color:#f1f1f1;
+    z-index: -10; /* me permet de mettre ce texte sous le titre*/
+    line-height: 270px;
+    text-transform: uppercase;
+}
+
+.text_section h2 {
+    font-size: 30px;
+}
+
+
