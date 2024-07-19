@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+section {
+    padding: 20px 15%; /* de bas en haut espace de 20px et de gauche a droite un espace de 15%*/
+}
+
+/* home page*/
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.home {
+    min-height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('images/home1.jpeg');
+    background-position: center; /*va me permettre de centrer mon iimage*/
+    background-size: cover ;
+    position: relative;  
+    margin-bottom: 230px; /*marge exterieur en bas qui sera de 230Px*/
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'anton', sans-serif;
+}
+
+.links {
+    display: flex;
+}
+
+.links li {
+    margin: 20px; /*espace entre mes liens*/
+}
+
+.links li a {
+    color: #fff;
+    position: relative; //*car on va position la barre en bas*/ 
+}
+
+.links li a:after { /*creation de l'effet*/
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #f9ad4a;
+    height: 4px;
+    width: 0%;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.links li a:hover:after { /*pour que l'effet marche*/
+    width: 100%;
+}
+
+/*Home page content*/ 
+
+.home_page_content {
+    position: absolute;
+    bottom: 60px;
+}
+
+.home_page_content span {
+    display: flex;
+    align-items: center;
+}
+
+.home_page_content span i { /* icone trophé*/
+    color: #f9ad4a;
+    margin-right: 15px;
+}
+
+.home_page_content span p { /* texte a coté du trophé*/
+    color: #fff;
+    font-weight: bold;
+}
+
+.home_page_content h1 { /* texte a coté du trophé*/
+    margin: 20px 0; /*espace en haut et en bas de 20px*/
+    font-size: 70px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.home_page_content .text { /* texte a coté du trophé*/
+    color: #b5b5b5;
+    margin-bottom: 30px;
+}
+
+.white_btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 30px;
+    transition: 0.5s;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white_btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.white_btn i {
+    margin-left: 20px;
+    color: #fff;
+}
+
+
+/*image_box*/
+
+
+.image_box {
+    position: absolute;
+    bottom: -140px;
+    right: 15%;
+}
+
+.image_box img {
+    border-radius: 6px;
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 0 32px 80px rgba(0,0,0,.24);
+}
+
+.image_box p {
+    margin-top: 20px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.image_box i {
+    color: #f9ad4a;
+    margin-right: 15px;
+}
+
+/*text_section*/
