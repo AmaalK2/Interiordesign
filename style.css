@@ -159,7 +159,7 @@ button {
     width: 600px;
     height: 500px;
     object-fit: cover;
-    box-shadow: 0 32px 80px rgba(0,0,0,.24);
+    box-shadow: 0 32px 80px -32px rgba(0,0,0,.24);
 }
 
 .image_box p {
@@ -198,4 +198,83 @@ button {
     font-size: 30px;
 }
 
+/* owner*/
 
+.owner { /* permet expace entre mes deux div et autres modification*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 120px 0;
+    height: 70vh;
+    margin-bottom: 170px;
+}
+
+.image_box_owner {
+    width: 45%;
+    height: 100%;
+}
+
+.image_box_owner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px; 
+    box-shadow: 0 32px 80px -32px rgba(0,0,0,.24);
+}
+
+.content_box { /*texte, title, p */
+    width: 45%;
+}
+
+.small_title {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    position: relative;
+    width: fit-content;
+}
+
+.small_title:before  /*pour creer la barre*/ {
+    content:"";
+    position: absolute;
+    background-color: #f9ad4a;
+    left: -65px;
+    bottom: 10px;
+    width: 50px;
+    height: 2px;
+    border-radius: 6px;
+}
+
+.big_title {
+    margin: 20px 0;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.text {
+    margin-bottom: 20px;
+}
+
+.dark_btn {
+    color: #000;
+    border: 1px solid #000;
+}
+
+.content_box button {
+    margin-top: 30px;
+}
+
+.dark_btn:hover {
+    background-color: #000;
+    color: white;
+}
+
+.image_box_owner p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.content_box p {
+    margin-top: 20px;
+}
