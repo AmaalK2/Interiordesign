@@ -13,7 +13,9 @@
     <section class="home">
         <div class="menu"> 
             <div class="logo">Interrior</div>
+            <button class="openbtn" onclick="openNav()">open</button>
             <ul class="links">
+                <button class="closebtn" onclick="closeNav()">close</button>
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">About</a></li>
@@ -138,7 +140,7 @@
                 <p>"Aptent mus quisque porttitor covallis tempora eaque blandit phasellus perspiciatis lectus, exercitations Portittor 
                     consectectur fugit ligula officiis rhoncus litora deserunt rations curae
                     beatae! Augue faucibu"</p>
-                    <div class="profil"><img src="images/woman1.jpeg" alt=""><span>Lyana Farea</span></div>
+                    <div class="profil"><img src="images/happyclients.jpg" alt=""><span>Lyana Farea</span></div>
             </div>
         </div>
 
@@ -152,7 +154,7 @@
             </div>
             <div class="comment">
                 <p>"Aptent mus quisque porttitor covallis tempora eaque blandit phasellus perspiciatis lectus, exercitations"</p>
-                    <div class="profil"><img src="images/woman2.jpeg" alt=""><span>Maria Waldorf </span></div>
+                    <div class="profil"><img src="images/woman2.jpg" alt=""><span>Maria Waldorf </span></div>
             </div>
         </div>
     </section>
@@ -169,6 +171,23 @@
 
         </div>
     </div>
+
+    <footer>
+        <p>Tous les droits sont réservés &#169;2024 pas @AmaaalK</p>
+    </footer>
+
+    <script>
+        function openNav(){
+            document.querySelector(".links").style.width = "100%"; 
+            document.querySelector("body").style.overflow="hidden";
+        }
+
+        function closeNav(){
+            document.querySelector(".links").style.width = "0%"; 
+            document.querySelector("body").style.overflow="unset";
+
+        }
+    </script>
 
 </body>
 </html>
