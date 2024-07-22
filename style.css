@@ -151,15 +151,15 @@ button {
 .image_box {
     position: absolute;
     bottom: -140px;
-    right: 15%;
+    right: 9%;
 }
 
 .image_box img {
     border-radius: 6px;
-    width: 600px;
-    height: 500px;
+    width: 528px;
+    height: 492px;
     object-fit: cover;
-    box-shadow: 0 32px 80px -32px rgba(0,0,0,.24);
+    box-shadow: 0 32px 80px -32px rgba(0, 0, 0, .24);
 }
 
 .image_box p {
@@ -374,3 +374,101 @@ button {
     font-size: 80px;
 }
 
+/*services*/
+
+.services {
+    display: flex;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.services .box {
+    width: 33.33%;
+    margin: 0 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services .box i {
+    font-size: 40px;
+    color: #f9ad4a;
+    background-color: #f7f0e6;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .box h2 { /* bulding planning */
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.services .box p {
+    color: #999;
+}
+
+/* Testimonials*/
+
+.testimonials {
+    margin: 120px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left , .right {
+    width: 48%;
+}
+
+.comment {
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.comment img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.comment:hover {
+    box-shadow: 0 32px 80px -32px rgba(0,0,0,.24);
+}
+
+.down {
+    margin-bottom: 55px;
+}
+
+.profil {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/*ranked*/ 
+
+.ranked {
+    text-align: center;
+    border-top: 1px solid #e1e1e1;
+}
+
+.ranked .big_title {
+    font-size: 20px;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+}
