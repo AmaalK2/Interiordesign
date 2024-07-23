@@ -186,7 +186,7 @@ button {
 
 .text_section p  /*interrior*/  {
     position: absolute;
-    font-size: 250px;
+    font-size: 232px;
     font-family: 'Anton', sans-serif;
     color:#f1f1f1;
     z-index: -10; /* me permet de mettre ce texte sous le titre*/
