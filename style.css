@@ -677,7 +677,15 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-    }    
+        background-color: black;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .home {
+        margin-bottom: 2rem;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) { /*tablette*/
